@@ -18,8 +18,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "18.x"
-      - name: install dependencies
-        run: npm Install --frozen-lockfile
+      - name: Install dependencies
+        run: npm install --frozen-lockfile
       - name: Build app
         run: npm build
       - name: Check files
