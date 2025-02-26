@@ -18,10 +18,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "18.x"
-      - name: Install dependencies
+      - name: install dependencies
         run: npm Install --frozen-lockfile
       - name: Build app
-        run: npm Build
+        run: npm build
       - name: Check files
         run: ls -al
       - name: Deploy to Github Pages
